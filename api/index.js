@@ -2,7 +2,7 @@ require("dotenv").config();
 const uri = process.env.MONGO_URI;
 const sec = process.env.SECRET;
 const port = process.env.PORT || 4000;
-const FRONT_END_URL = process.env.FRONT_END_URL;
+const FRONT_END_URL = process.env.FRONT_END_URL || "https://dhruv-mern-blog.netlify.app";
 const express = require("express");
 const cors = require("cors");
 const { default: mongoose } = require("mongoose");
